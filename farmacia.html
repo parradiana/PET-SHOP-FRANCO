@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Petshop | FRANCO</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <link rel="shortcut icon" href="/img/Output.ico" type="image/x-icon">
+</head>
+
+<body id="farmacia">
+  <header>
+    <nav class="navbar navbar-light">
+      <div class="container-fluid row">
+        <div class="col-4">
+          <a class="navbar-brand fw-bold fs-1" href="/index.html"><img src="/img/logoheader.png" alt=""></a>
+        </div>
+        <div class="col-8">
+          <a class="navbar-brand " href="index.html">Inicio</a>
+          <a class="navbar-brand text-light" href="#">Farmacia</a>
+          <a class="navbar-brand" href="/juguetes.html">Juguetes</a>
+          <a class="navbar-brand" href="/contacto.html">Contacto</a>
+          <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <i class="bi bi-cart4 text-light fs-1"></i>
+          </button>
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">MI CARRITO <i class="bi bi-cart4 fs-3"></i></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <div class="carrito" id="carrito1">       
+                      <div class="carrito" id="carrito"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer" id="footerCarrito">
+                  <button type="button" class="btn btn-danger" id="boton-vaciar">Vaciar Carrito</button>
+                  <button type="button" class="btn btn-success" id="boton-finalizar">Finalizar Compra</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div>
+    <a href="https://api.whatsapp.com/send?phone=3446577981" class="btn-wsp" target="_blank">
+      <i class="bi bi-whatsapp text-light fs-3"></i>
+    </a>
+  </div>
+  <main>
+    <div class="fotof"></div>
+    <div class="d-flex justify-content-center">
+      <div id="productos" class="row" style="width: 55rem"></div>
+    </div>
+    <div class="position-fixed bottom-0 end-0 p-4" style="z-index: 100">
+      <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body text-center ">
+          <span id="texto" class="text-light"></span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-5">
+    <div class="container-fluid">
+      <div class="row p-3 d-flex align-items-center">
+        <div class="navegadores col-4">
+          <h4 class="fs-3">Categorías</h4>
+          <a href="#">Inicio</a>
+          <a href="/farmacia.html">Farmacia</a>
+          <a href="/juguetes.html">Juguetes</a>
+          <a href="/contacto.html">Contacto</a>
+        </div>
+        <div class="d-flex-column col-4">
+          <div>
+            <span>Seguinos en nuestras redes sociales: <img src="/img/facebook.png" alt=""> <img
+                src="/img/instagram.png" alt=""></span>
+          </div>
+          <div>
+            <i class="bi bi-envelope-fill fs-4"></i>
+            <a href="mailto:franco.petshop@gmail.com">franco.petshop@gmail.com</a>
+          </div>
+          <div>
+            <i class="bi bi-telephone-fill fs-4"></i>
+            (11) 50197610
+          </div>
+        </div>
+        <div class="col-3">
+          <img class="img-fluid logofooter" src="/img/logofooter.PNG" width="250px" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright p-3">
+    <p class="text-center text-light">&copy; 2021 - Todos los derechos reservados</p>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+  <script src="./javascript/script.js"></script>
+</body>
+</html>
